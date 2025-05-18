@@ -9,21 +9,20 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="weather-app">
-      <h1>Weather App</h1>
-      <div class="search-container">
-        <input type="text" id="city-input" placeholder="Enter city name" />
-        <button id="search-button">Search</button>
-      </div>
-      <div class="weather-info" id="weather-info">
-        <h2 id="city-name"></h2>
-        <img id="weather-icon" alt="Weather Icon" />
-        <p id="temperature"></p>
-        <p id="description"></p>
-        <p id="humidity"></p>
-        <p id="wind-speed"></p>
-      </div>
+    <form class="weatherform">
+      <input type="text" class="cityInput" placeholder="Enter City" />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card">
+      <h1 class="cityDisplay">London</h1>
+      <p class="tempDisplay">90'F</p>
+      <p class="humidityDisplay">Hugmity: 75%</p>
+      <p class="descDisplay">Clear Skies</p>
+      <p class="weatherEmoji">🌞</p>
+      <p class="errorDisplay">Please enter a city</p>
     </div>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
