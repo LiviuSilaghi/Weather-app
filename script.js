@@ -12,7 +12,7 @@ weatherform.addEventListener("submit", async (event) => {
   if (city) {
     try {
       const weatherData = await getWeatherData(city);
-      displayweatherinfo(weatherData);
+      displayweatherInfo(weatherData);
     } catch (error) {
       console.error(error);
       displayError(error);
@@ -29,12 +29,17 @@ async function getWeatherData(city) {
 
   const response = await fetch(apiUrl);
 
-  console.log(response);
+  if (!response.ok) {
+    throw new Error("City not found");
+  }
+  return await response.json();
 }
 
-function displayweatherinfo(data) {}
+function displayweatherInfo(data) {
+  console.log(data);
+}
 
-function getWeatheremoji(weatherid) {}
+function getweathermoji(weatherid) {}
 
 function displayError(message) {
   const errorDisplay = document.createElement("p");
