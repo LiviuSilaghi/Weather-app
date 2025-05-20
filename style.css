@@ -20,6 +20,17 @@ body {
   height: 750px;
 }
 
+.card {
+  background: linear-gradient(45deg, hsl(209, 100%, 82%), hsl(240, 22%, 48%));
+  border: 2px solid #525252;
+  max-width: 600px;
+  border-radius: 15px;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  align-items: center;
+}
+
 .weatherform {
   margin: 20px;
 }
@@ -31,7 +42,7 @@ body {
   border: 2px solid #525252;
   border-radius: 10px;
   margin: 10px;
-  width: 300px;
+  width: 250px;
 }
 
 button[type="submit"] {
@@ -49,19 +60,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #7a7a7a;
-}
-
-.card {
-  background: linear-gradient(45deg, hsl(209, 100%, 82%), hsl(240, 22%, 48%));
-  border: 2px solid #525252;
-  border-radius: 10px;
-  padding: 40px;
-  max-width: 250px;
-  border-radius: 15px;
-  display: flex;
-  height: 450px;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
@@ -104,8 +102,15 @@ p {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 525px) {
+  .container {
+    max-width: 100%;
+    border: none;
+  }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 358px) {
+  .cityInput {
+    width: 200px;
+  }
 }
