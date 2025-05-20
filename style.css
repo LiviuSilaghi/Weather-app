@@ -103,3 +103,39 @@ p {
   font-weight: bold;
   color: hsla(0, 0%, 0%, 0.8);
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+    padding: 3px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .cityInput {
+    width: 60%;
+    font-size: 1.2rem;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  button[type="submit"] {
+    width: 90%;
+    font-size: 1rem;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  h1,
+  p,
+  .cityDisplay,
+  .tempDisplay,
+  .humidityDisplay,
+  .descDisplay,
+  .errorDisplay {
+    font-size: 1.5rem;
+  }
+}
