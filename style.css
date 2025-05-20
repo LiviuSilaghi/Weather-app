@@ -105,57 +105,7 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .container {
-    width: 100%;
-    padding: 3px;
-    border: none;
-  }
+}
 
-  .card {
-    padding: 4px;
-    max-width: 450px;
-    border-radius: 15px;
-    display: flex;
-    height: 450px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cityInput {
-    width: 50%;
-    font-size: 1.2rem;
-    padding-left: auto;
-    padding-right: auto;
-  }
-
-  button[type="submit"] {
-    font-size: 1rem;
-    padding-left: auto;
-    padding-right: auto;
-  }
-
-  h1,
-  p,
-  .cityDisplay,
-  .tempDisplay,
-  .humidityDisplay,
-  .descDisplay,
-  .errorDisplay {
-    font-size: 1.5rem;
-  }
-  @media screen and (max-width: 350px) {
-    .cityInput {
-      width: 70%;
-      font-size: 0.8rem;
-    }
-    .card {
-      padding: 4px;
-      max-width: 450px;
-      border-radius: 15px;
-      display: flex;
-      height: 450px;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+@media screen and (max-width: 525px) {
 }
