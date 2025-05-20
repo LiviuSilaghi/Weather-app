@@ -7,7 +7,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #525252;
+  border-radius: 15px;
+  max-width: fit-content;
+  height: 750px;
 }
 
 .weatherform {
@@ -42,12 +52,14 @@ button[type="submit"]:hover {
 }
 
 .card {
-  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(37, 100%, 71%));
-  padding: 50px;
-  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  background: linear-gradient(45deg, hsl(209, 100%, 82%), hsl(240, 22%, 48%));
+  border: 2px solid #525252;
+  border-radius: 10px;
+  padding: 40px;
   max-width: 250px;
   border-radius: 15px;
   display: flex;
+  height: 450px;
   flex-direction: column;
   align-items: center;
 }
