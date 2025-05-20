@@ -104,26 +104,26 @@ p {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .container {
-    width: 70%;
+    width: 100%;
     padding: 3px;
+    border: none;
   }
 
   .card {
     max-width: 100%;
-    padding: 20px;
+    padding: 10px;
   }
 
   .cityInput {
-    width: 60%;
+    width: 50%;
     font-size: 1.2rem;
     padding-left: auto;
     padding-right: auto;
   }
 
   button[type="submit"] {
-    width: 90%;
     font-size: 1rem;
     padding-left: auto;
     padding-right: auto;
@@ -137,5 +137,11 @@ p {
   .descDisplay,
   .errorDisplay {
     font-size: 1.5rem;
+  }
+  @media screen and (max-width: 350px) {
+    .cityInput {
+      width: 70%;
+      font-size: 0.8rem;
+    }
   }
 }
