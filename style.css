@@ -23,10 +23,11 @@ body {
 .card {
   background: linear-gradient(45deg, hsl(209, 100%, 82%), hsl(240, 22%, 48%));
   border: 2px solid #525252;
-  max-width: 600px;
+  width: 340px;
   border-radius: 15px;
   display: flex;
-  height: 450px;
+  height: 500px;
+  padding-top: 2rem;
   flex-direction: column;
   align-items: center;
 }
@@ -77,7 +78,6 @@ p {
 .tempDisplay {
   font-size: 3.5rem;
   font-weight: bold;
-
   margin-bottom: 25px;
 }
 
@@ -100,6 +100,7 @@ p {
   font-size: 2rem;
   font-weight: bold;
   color: hsla(0, 0%, 0%, 0.8);
+  padding-left: 1rem;
 }
 
 @media screen and (max-width: 525px) {
@@ -112,5 +113,32 @@ p {
 @media screen and (max-width: 358px) {
   .cityInput {
     width: 200px;
+  }
+  .h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .errorDisplay {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2rem;
+  }
+  .cityDisplay,
+  .tempDisplay {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .humidityDisplay,
+  .descDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .card {
+    width: 300px;
+    border: none;
   }
 }
